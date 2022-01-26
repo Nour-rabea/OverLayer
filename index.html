@@ -77,13 +77,6 @@
       scrollWheelZoom: true,
       tap: false
     }).setView([30.02, 31.55], 11);
-
-    var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
-	  
-    var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-    });
-    map.addLayer(Esri_WorldImagery);
 	  
     var imageUrl = 'https://d3rr2gvhjw0wwy.cloudfront.net/uploads/activity_galleries/135408/2000x2000-0-70-33471fbac4bc46fa8f6f9c3594f3a094.jpg',
     imageBounds = [[30.029974, 31.512272], [30.022083, 31.530986]];
