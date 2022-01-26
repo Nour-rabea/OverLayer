@@ -84,6 +84,10 @@
 	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
     });
     map.addLayer(Esri_WorldImagery);
+	  
+    var imageUrl = 'https://images.reference.com/amg-cms-reference-images/prod/why-did-egyptians-stop-building-pyramids_312adaad-b3a7-4fbf-a65b-54fddf9a5ac2.jpg',
+    imageBounds = [[30.02165498279986, 31.51166439056396], [30.02165498279986, 31.52574062347412]];
+L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
   </script>
 
