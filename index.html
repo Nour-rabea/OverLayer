@@ -85,31 +85,8 @@
     });
     map.addLayer(Esri_WorldImagery);
 	  
-    var imageUrl = 'https://images.reference.com/amg-cms-reference-images/prod/why-did-egyptians-stop-building-pyramids_312adaad-b3a7-4fbf-a65b-54fddf9a5ac2.jpg',
-    imageBounds =  'coordinates', [
-          [
-            [
-              31.51166439056396,
-              30.02165498279986
-            ],
-            [
-              31.52574062347412,
-              30.02165498279986
-            ],
-            [
-              31.52574062347412,
-              30.032430120275098
-            ],
-            [
-              31.51166439056396,
-              30.032430120275098
-            ],
-            [
-              31.51166439056396,
-              30.02165498279986
-            ]
-          ]
-        ];
+    var imageUrl = 'http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
+    imageBounds = [[40.712216, -74.22655], [40.773941, -74.12544]];
 L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
   </script>
