@@ -292,9 +292,6 @@ $(window).on('load', function() {
       var popupProperties = getPolygonSetting(p, '_popupProp').split(';');
       for (i in popupProperties) { popupProperties[i] = popupProperties[i].split(','); }
       allPopupProperties.push(popupProperties);
-        var imageUrl = '_polygonDisplayImages',
-            imageBounds = 'geojson-point-marker';
-      L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
       // Load geojson
       $.getJSON(getPolygonSetting(p, '_polygonsGeojsonURL').trim(), function(data) {
@@ -504,6 +501,10 @@ $(window).on('load', function() {
    * Generates CSS for each geojson feature
    */
   function polygonStyle(feature) {
+        var imageUrl = '_polygonDisplayImages',
+            imageBounds = 'geojson-point-marker';
+      L.imageOverlay(imageUrl, imageBounds).addTo(map);
+    
     var value = feature.properties[allPolygonLayers[polygon][layer][0].trim()];
 
     if (feature.geometry.type == 'Point') {
