@@ -532,7 +532,8 @@ $(window).on('load', function() {
     var num = allIsNumerical[polygon][layer];
     var col = allColors[polygon][layer];
     var div = allDivisors[polygon][layer];
-
+    var imageUrl = allimageUrl[polygon][layer];
+        
     var i;
 
     if (num) {
