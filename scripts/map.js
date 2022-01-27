@@ -530,8 +530,9 @@ $(window).on('load', function() {
    */
   function imageOverlay(d) {
     var imageUrl = '<img src="' + feature.properties['img'] + '">';
-    var imageBounds = 'latlng';
-    
+    var imageBounds = 'circleMarker(latlng, {
+                className: 'geojson-point-marker'
+              })';
   L.imageOverlay(imageUrl, imageBounds).addTo(map);
   }
     
