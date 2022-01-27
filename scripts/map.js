@@ -519,8 +519,8 @@ $(window).on('load', function() {
         opacity: 1,
         color: tryPolygonSetting(polygon, '_outlineColor', 'white'),
         dashArray: '3',
-        fill: getJSON(feature.properties['img']),
-        fillOpacity: tryPolygonSetting(polygon, '_colorOpacity', '0.7')
+        fillOpacity: tryPolygonSetting(polygon, '_colorOpacity', '0.7'),
+        fillColor: getColor(value)
       }
     }
   }
