@@ -281,14 +281,9 @@ $(window).on('load', function() {
   allGeojsons = [];
   allPolygonLegends = [];
   allPolygonLayers = [];
-  allimageOverlay = [];
   allPopupProperties = [];
   allTextLabelsLayers = [];
   allTextLabels = [];
-
-  function imageOverlay(p) {
-    var imageUrl = (feature.properties['img']);
-  L.imageOverlay(imageUrl, latlng).addTo(map); 
     
   function loadAllGeojsons(p) {
     if (p < polygonSettings.length && getPolygonSetting(p, '_polygonsGeojsonURL').trim()) {
