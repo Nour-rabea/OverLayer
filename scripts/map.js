@@ -287,8 +287,8 @@ $(window).on('load', function() {
 
   function imageOverlay(p) {
     var imageUrl = (feature.properties['img']),
-        imageBounds = (Feature, latlng);
-  L.imageOverlay(imageUrl, imageBounds).addTo(map); 
+        pointToLayer = (Feature, latlng);
+  L.imageOverlay(imageUrl, pointToLayer).addTo(map); 
     
   function loadAllGeojsons(p) {
     if (p < polygonSettings.length && getPolygonSetting(p, '_polygonsGeojsonURL').trim()) {
