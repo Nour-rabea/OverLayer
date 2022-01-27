@@ -280,11 +280,16 @@ $(window).on('load', function() {
   allIsNumerical = [];
   allGeojsons = [];
   allPolygonLegends = [];
-  allPolygonLayers = [];
+  allPolygonLayers = [imageOverlay];
   allPopupProperties = [];
   allTextLabelsLayers = [];
   allTextLabels = [];
 
+  function imageOverlay(p) {
+    var imageUrl = (feature.properties['img']),
+        imageBounds = (Feature, latlng);
+  L.imageOverlay(imageUrl, imageBounds).addTo(map); 
+    
   function loadAllGeojsons(p) {
     if (p < polygonSettings.length && getPolygonSetting(p, '_polygonsGeojsonURL').trim()) {
       // Pre-process popup properties to be used in onEachFeature below
