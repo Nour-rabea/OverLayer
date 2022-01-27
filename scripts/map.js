@@ -534,25 +534,25 @@ $(window).on('load', function() {
   L.imageOverlay(imageUrl, imageBounds).addTo(map);
   }
     
-  //function getColor(d) {
-    //var num = allIsNumerical[polygon][layer];
-    //var col = allColors[polygon][layer];
-    //var div = allDivisors[polygon][layer];
+  function getColor(d) {
+    var num = allIsNumerical[polygon][layer];
+    var col = allColors[polygon][layer];
+    var div = allDivisors[polygon][layer];
         
-    //var i;
+    var i;
 
-    //if (num) {
-      //i = col.length - 1;
-      //while (d < div[i]) i -= 1;
-    //} else {
-      //for (i = 0; i < col.length - 1; i++) {
-        //if (d == div[i]) break;
-      //}
-    //}
+    if (num) {
+      i = col.length - 1;
+      while (d < div[i]) i -= 1;
+    } else {
+      for (i = 0; i < col.length - 1; i++) {
+        if (d == div[i]) break;
+      }
+    }
 
-    //if (!col[i]) {i = 0}
-    //return col[i];
-  //}
+    if (!col[i]) {i = 0}
+    return col[i];
+  }
 
 
   /**
