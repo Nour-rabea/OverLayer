@@ -269,7 +269,9 @@ $(window).on('load', function() {
     return group;
   }
 
- 
+         var imageUrl = '_polygonDisplayImages',
+            imageBounds = 'geojson-point-marker';
+      L.imageOverlay(imageUrl, imageBounds).addTo(map);
   /**
    * Here all data processing from the spreadsheet happens
    */
