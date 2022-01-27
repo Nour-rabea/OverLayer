@@ -520,7 +520,7 @@ $(window).on('load', function() {
         color: tryPolygonSetting(polygon, '_outlineColor', 'white'),
         dashArray: '3',
         fillOpacity: tryPolygonSetting(polygon, '_colorOpacity', '0.7'),
-        fillColor: 'blank'
+        fillColor: 'L.imageOverlay'
       }
     }
   }
@@ -528,25 +528,30 @@ $(window).on('load', function() {
   /**
    * Returns a color for polygon property with value d
    */
-  function getColor(d) {
-    var num = allIsNumerical[polygon][layer];
-    var col = allColors[polygon][layer];
-    var div = allDivisors[polygon][layer];
+  function L.imageOverlay {
+    var imageUrl = feature.properties[img];
+    var imageBounds = Feature[latlng];
+  L.imageOverlay(imageUrl, imageBounds).addTo(map);
+    
+  //function getColor(d) {
+    //var num = allIsNumerical[polygon][layer];
+    //var col = allColors[polygon][layer];
+    //var div = allDivisors[polygon][layer];
         
-    var i;
+    //var i;
 
-    if (num) {
-      i = col.length - 1;
-      while (d < div[i]) i -= 1;
-    } else {
-      for (i = 0; i < col.length - 1; i++) {
-        if (d == div[i]) break;
-      }
-    }
+    //if (num) {
+      //i = col.length - 1;
+      //while (d < div[i]) i -= 1;
+    //} else {
+      //for (i = 0; i < col.length - 1; i++) {
+        //if (d == div[i]) break;
+      //}
+    //}
 
-    if (!col[i]) {i = 0}
-    return col[i];
-  }
+    //if (!col[i]) {i = 0}
+    //return col[i];
+  //}
 
 
   /**
