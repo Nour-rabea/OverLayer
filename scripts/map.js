@@ -297,7 +297,7 @@ $(window).on('load', function() {
       $.getJSON(getPolygonSetting(p, '_polygonsGeojsonURL').trim(), function(data) {
           geoJsonLayer = L.geoJson(data, {
             onEachFeature: onEachFeature,
-            pointToLayer: function(feature, latlng) {
+            pointToLayer: function(feature.properties['img'], latlng) {
               return L.circleMarker(latlng, {
                 className: 'geojson-point-marker'
               });
