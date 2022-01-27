@@ -272,6 +272,7 @@ $(window).on('load', function() {
   var polygon = 0; // current active polygon
   var layer = 0; // number representing current layer among layers in legend
   var imageUrl = '_polygonDisplayImages',
+      imageBounds = 'geojson-point-marker';
 L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
   /**
