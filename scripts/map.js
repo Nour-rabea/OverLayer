@@ -520,7 +520,7 @@ $(window).on('load', function() {
         color: tryPolygonSetting(polygon, '_outlineColor', 'white'),
         dashArray: '3',
         fillOpacity: tryPolygonSetting(polygon, '_colorOpacity', '0.7'),
-        fillColor: L.imageOverlay
+        fillColor: imageOverlay(imageUrl, imageBounds)
       }
     }
   }
@@ -528,10 +528,9 @@ $(window).on('load', function() {
   /**
    * Returns a color for polygon property with value d
    */
-  function L.imageOverlay {
+  function imageOverlay {
     var imageUrl = feature.properties[img];
     var imageBounds = L.circleMarker;
-  L.imageOverlay(imageUrl, imageBounds).addTo(map);
   }
     
   function getColor(d) {
