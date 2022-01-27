@@ -289,6 +289,11 @@ $(window).on('load', function() {
     if (p < polygonSettings.length && getPolygonSetting(p, '_polygonsGeojsonURL').trim()) {
       // Pre-process popup properties to be used in onEachFeature below
       polygon = p;
+      
+      var imageUrl = '_polygonDisplayImages',
+          imageBounds = 'geojson-point-marker';
+      L.geojson-point-marker(imageUrl, imageBounds).addTo(map);
+      
       var popupProperties = getPolygonSetting(p, '_popupProp').split(';');
       for (i in popupProperties) { popupProperties[i] = popupProperties[i].split(','); }
       allPopupProperties.push(popupProperties);
