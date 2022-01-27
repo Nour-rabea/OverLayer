@@ -528,10 +528,11 @@ $(window).on('load', function() {
   /**
    * Returns a color for polygon property with value d
    */
-  function L.imageOverlay 
+  function L.imageOverlay {
     var imageUrl = feature.properties[img];
     var imageBounds = Feature[latlng];
   L.imageOverlay(imageUrl, imageBounds).addTo(map);
+  }
     
   //function getColor(d) {
     //var num = allIsNumerical[polygon][layer];
