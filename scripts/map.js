@@ -520,7 +520,7 @@ $(window).on('load', function() {
         color: tryPolygonSetting(polygon, '_outlineColor', 'white'),
         dashArray: '3',
         fillOpacity: tryPolygonSetting(polygon, '_colorOpacity', '0.7'),
-        fillColor: imageOverlay(imageUrl, imageBounds)
+        fillColor: imageOverlay(value)
       }
     }
   }
@@ -531,6 +531,7 @@ $(window).on('load', function() {
   function imageOverlay(d) {
     var imageUrl = '<img src="' + feature.properties['img'] + '">';
     var imageBounds = 'latlng';
+    
   }
     
   function getColor(d) {
