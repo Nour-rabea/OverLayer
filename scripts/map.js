@@ -292,7 +292,7 @@ $(window).on('load', function() {
       
       var imageUrl = '_polygonDisplayImages',
           imageBounds = 'geojson-point-marker';
-      L.geojson-point-marker(imageUrl, imageBounds).addTo(map);
+      L.imageOverlay(imageUrl, imageBounds).addTo(map);
       
       var popupProperties = getPolygonSetting(p, '_popupProp').split(';');
       for (i in popupProperties) { popupProperties[i] = popupProperties[i].split(','); }
