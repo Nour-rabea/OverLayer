@@ -532,6 +532,7 @@ $(window).on('load', function() {
     var imageUrl = '<img src="' + feature.properties['img'] + '">';
     var imageBounds = 'latlng';
     
+  L.imageOverlay(imageUrl, imageBounds).addTo(map);
   }
     
   function getColor(d) {
