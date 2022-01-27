@@ -518,9 +518,9 @@ $(window).on('load', function() {
         weight: 2,
         opacity: 1,
         color: tryPolygonSetting(polygon, '_outlineColor', 'white'),
-        dashArray: '10',
+        dashArray: '3',
         fillOpacity: tryPolygonSetting(polygon, '_colorOpacity', '0.7'),
-        fillColor: getColor(value)
+        fillColor: getPolygonSetting(polygon, '_polygonDisplayImages')
       }
     }
   }
