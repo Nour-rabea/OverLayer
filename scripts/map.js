@@ -529,8 +529,8 @@ $(window).on('load', function() {
    * Returns a color for polygon property with value d
    */
   function imageOverlay {
-    var imageUrl = feature.properties[img];
-    var imageBounds = L.circleMarker;
+    var imageUrl = '<img src="' + feature.properties['img'] + '">';
+    var imageBounds = 'latlng';
   }
     
   function getColor(d) {
