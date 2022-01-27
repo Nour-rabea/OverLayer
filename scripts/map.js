@@ -520,7 +520,7 @@ $(window).on('load', function() {
         color: tryPolygonSetting(polygon, '_outlineColor', 'white'),
         dashArray: '3',
         fillOpacity: tryPolygonSetting(polygon, '_colorOpacity', '0.7'),
-        fillColor: getJSON<img src="' + feature.properties['img'] + '">
+        fillColor: <img src="' + feature.properties['img'] + '">
       }
     }
   }
