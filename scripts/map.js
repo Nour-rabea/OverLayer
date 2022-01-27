@@ -520,7 +520,7 @@ $(window).on('load', function() {
         color: tryPolygonSetting(polygon, '_outlineColor', 'white'),
         dashArray: '3',
         fillOpacity: tryPolygonSetting(polygon, '_colorOpacity', '0.7'),
-        fillColor: getColor(value)
+        fillColor: getImageUrl(feature.properties['img'])
       }
     }
   }
@@ -532,7 +532,6 @@ $(window).on('load', function() {
     var num = allIsNumerical[polygon][layer];
     var col = allColors[polygon][layer];
     var div = allDivisors[polygon][layer];
-    var imageUrl = allimageUrl[polygon][layer];
         
     var i;
 
