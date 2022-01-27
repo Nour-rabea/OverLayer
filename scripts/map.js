@@ -271,9 +271,6 @@ $(window).on('load', function() {
 
   var polygon = 0; // current active polygon
   var layer = 0; // number representing current layer among layers in legend
-  var imageUrl = '_polygonDisplayImages',
-      imageBounds = 'geojson-point-marker';
-L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
   /**
    * Store bucket info for Polygons
@@ -295,6 +292,9 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
       var popupProperties = getPolygonSetting(p, '_popupProp').split(';');
       for (i in popupProperties) { popupProperties[i] = popupProperties[i].split(','); }
       allPopupProperties.push(popupProperties);
+        var imageUrl = '_polygonDisplayImages',
+            imageBounds = 'geojson-point-marker';
+      L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
       // Load geojson
       $.getJSON(getPolygonSetting(p, '_polygonsGeojsonURL').trim(), function(data) {
