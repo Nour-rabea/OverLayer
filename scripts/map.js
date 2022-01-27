@@ -501,10 +501,6 @@ $(window).on('load', function() {
    * Generates CSS for each geojson feature
    */
   function polygonStyle(feature) {
-        var imageUrl = '_polygonDisplayImages',
-            imageBounds = 'geojson-point-marker';
-      L.imageOverlay(imageUrl, imageBounds).addTo(map);
-    
     var value = feature.properties[allPolygonLayers[polygon][layer][0].trim()];
 
     if (feature.geometry.type == 'Point') {
