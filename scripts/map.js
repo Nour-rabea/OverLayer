@@ -280,7 +280,8 @@ $(window).on('load', function() {
   allIsNumerical = [];
   allGeojsons = [];
   allPolygonLegends = [];
-  allPolygonLayers = [imageOverlay];
+  allPolygonLayers = [];
+  allimageOverlay = [];
   allPopupProperties = [];
   allTextLabelsLayers = [];
   allTextLabels = [];
