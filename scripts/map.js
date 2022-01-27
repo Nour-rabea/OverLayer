@@ -530,7 +530,7 @@ $(window).on('load', function() {
    */
   function L.imageOverlay {
     var imageUrl = feature.properties[img];
-    var imageBounds = Feature[latlng];
+    var imageBounds = L.circleMarker;
   L.imageOverlay(imageUrl, imageBounds).addTo(map);
   }
     
