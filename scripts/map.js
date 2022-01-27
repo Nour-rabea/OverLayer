@@ -271,6 +271,8 @@ $(window).on('load', function() {
 
   var polygon = 0; // current active polygon
   var layer = 0; // number representing current layer among layers in legend
+  var imageUrl = '_polygonDisplayImages',
+L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
   /**
    * Store bucket info for Polygons
