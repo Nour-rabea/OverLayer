@@ -520,22 +520,14 @@ $(window).on('load', function() {
         color: tryPolygonSetting(polygon, '_outlineColor', 'white'),
         dashArray: '3',
         fillOpacity: tryPolygonSetting(polygon, '_colorOpacity', '0.7'),
-        fillColor: imageOverlay(value)
+        fillColor: getColor(value)
       }
     }
   }
 
   /**
    * Returns a color for polygon property with value d
-   */
-  function imageOverlay(d) {
-    var imageUrl = '<img src="' + feature.properties['img'] + '">';
-    var imageBounds = 'circleMarker(latlng, {
-                className: 'geojson-point-marker'
-              })';
-  L.imageOverlay(imageUrl, imageBounds).addTo(map);
-  }
-    
+   */   
   function getColor(d) {
     var num = allIsNumerical[polygon][layer];
     var col = allColors[polygon][layer];
