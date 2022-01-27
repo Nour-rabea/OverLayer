@@ -290,8 +290,8 @@ $(window).on('load', function() {
       // Pre-process popup properties to be used in onEachFeature below
       polygon = p;
       
-      var imageUrl = '_polygonDisplayImages',
-          imageBounds = 'geojson-point-marker';
+      var imageUrl = 'feature.properties['img']',
+          imageBounds = function(latlng);
       L.imageOverlay(imageUrl, imageBounds).addTo(map);
       
       var popupProperties = getPolygonSetting(p, '_popupProp').split(';');
