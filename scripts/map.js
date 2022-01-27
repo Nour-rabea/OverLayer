@@ -506,12 +506,12 @@ $(window).on('load', function() {
 
     if (feature.geometry.type == 'Point') {
       return {  // Point style
-        radius: 0,
-        weight: 0,
-        opacity: 0,
-        color: feature.properties['img'],
+      	radius: 4,
+        weight: 1,
+        opacity: 1,
+        color: getColor(value),
         fillOpacity: tryPolygonSetting(polygon, '_colorOpacity', '0.7'),
-        fillColor: 'red'
+        fillColor: 'white'
       }
     } else {
       return {  // Polygon and Polyline style
