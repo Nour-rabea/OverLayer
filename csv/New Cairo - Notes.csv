@@ -1,0 +1,16 @@
+"Your notes about data sources (will not appear on the map, but visible to anyone who can view this sheet)",,,,,,,,,
+GeoJSON URL,Display Name,Description,Color,,,,,,
+,trail,"trail (paved and unpaved), East Coast Greenway 2021",green,,,,,,
+,on-road,"on-road route, East Coast Greenway 2021",blue,,,,,,
+,transit or ferry,"transit or ferry route, East Coast Greenway 2021",#efec00,,,,,,
+,,,,,,,,,
+Group,Marker Icon,Marker Color,Icon Color,Custom Size,Name,Description,Image,Latitude,Longitude
+Visit,media/calais-64.jpg,,,40x40,"Calais, Maine",The northern end of the East Coast Greenway. <a href='https://www.greenway.org/stories/maine-to-new-hampshire-week-1-east-coast-river-relay' target='_blank'>Read more</a>. Photo by ECG.,media/calais.jpg,45.18683,-67.2683
+Visit,media/delaware-64.jpg,,,40x40,"Jack Markell Trail, Delaware",Walk or bike on <a href='https://www.delawaregreenways.org/portfolio_page/jackamarkell-trail/' target='_blank'>Jack Markell trail</a> on the East Coast Greenway.,media/delaware.jpg,39.723975,-75.562312
+Visit,media/ecg-logo-64.png,,,40x40,"East Coast Greenway, Durham NC",Visit <a href='https://greenway.org' target='_blank'>Greenway.org</a> and view <a href='https://www.greenway.org/route-map' target='_blank'>the official map</a>.,media/ecg-logo.png,35.9207099,-78.9296101
+Food,fa-ice-cream,green,white,,"Capital Ice Cream, Hartford CT",Visit <a href='https://capitalicecream.com' target='_blank'>Capital Ice Cream in Hartford CT</a> and see more <a href='https://www.greenway.org/stories/churning-up-an-appetite-favorite-ice-cream-shops-along-the-east-coast-greenway' target='_blank'>favorite ice cream stops on the East Coast Greenway</a>.,media/icecream.jpg,41.76385504,-72.68853213
+Food,fa-coffee,green,white,,"Sentient Bean coffee, Savanah GA",Visit <a href='https://www.sentientbean.com' target='_blank'>Sentient Bean</a> and see more <a href='https://www.greenway.org/stories/caffeinate-your-ride-coffee-shops-along-the-greenway' target='_blank'>favorite coffee shops on the Greenway</a>.,media/coffee.png,32.06477342,-81.09702363
+Visit,media/keywest-64.jpg,,,40x40,"Key West, Florida",The southern end of the East Coast Greenway.,media/keywest.jpg,24.5550593,-81.7799871
+,,,,,,,,,
+,,,,,,,,,
+,,ارض مساحتها 157.5فدان (بصافي 139.34 فدان) جنوب محور محمد بن زايد بنشاط سياحي اداري ترفيهي وعمراني 20% ترفيهي اداري سياحي تجاري (30% نسبة بنائيه) معامل التغطيه 80% عمراني متكامل (النسبة بنائيه 50% للعمارات و40% للفيلات) اراضي الخدمات من 8 الي 12% ردود قطعة الارض 10م اقصى ارتفاع (ارضي+4ادوار) اة 13.70م حسب قيود القوات المسلحة مدة التنفيذ 6 سنوات,,,,,,,

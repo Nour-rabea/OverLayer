@@ -1,0 +1,4 @@
+GeoJSON URL,Display Name,Description,Color
+geodata/location.geojson,Location,ارض فلل ومحلات ومكاتب,#cc3300
+geodata/القطار الكهربائي.geojson,Monorail,"القطار الكهربائي <img src=""media/خط المونوريل.jpg"" />",Yellow
+geodata/الطرق الرئيسية.geojson,Main Roads,الطرق الرئيسية,darkred
