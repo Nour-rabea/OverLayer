@@ -12,13 +12,12 @@ $(window).on('load', function() {
   /**
    * Returns an Awesome marker with specified parameters
    */
-  function createMarkerIcon(icon, prefix, markerColor, iconColor, label) {
+  function createMarkerIcon(icon, prefix, markerColor, iconColor) {
     return L.AwesomeMarkers.icon({
       icon: icon,
       prefix: prefix,
       markerColor: markerColor,
-      iconColor: iconColor,
-      label: 'text'
+      iconColor: iconColor
     });
   }
   
