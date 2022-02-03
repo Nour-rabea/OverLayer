@@ -84,7 +84,7 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
 	  
     var m = L.marker([30.025886,31.519963], {draggable:true}).bindTooltip('Gooood ISA', { permanent: true }).addTo(map);
 	  
-    var m = L.textlabel (latlng, {draggable:true}).bindTooltip(['text'], { permanent: true }).addTo(map);
+    var m = L.textlabel ([marker.latlng], {draggable:true}).bindTooltip(['text'], { permanent: true }).addTo(map);
 	  
   </script>
 
