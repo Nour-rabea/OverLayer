@@ -20,8 +20,6 @@ $(window).on('load', function() {
       iconColor: iconColor
     });
   }
-
-L.marker([30.059786,31.541351]).bindLabel('Look revealing label!').addTo(map);
   
   /**
    * Sets the map view so that all markers are visible, or
