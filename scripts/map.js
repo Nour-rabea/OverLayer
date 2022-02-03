@@ -12,7 +12,7 @@ $(window).on('load', function() {
   /**
    * Returns an Awesome marker with specified parameters
    */
-  function createMarkerIcon(icon, prefix, markerColor, iconColor) {
+  function createMarkerIcon(icon, prefix, markerColor, iconColor, label) {
     return L.AwesomeMarkers.icon({
       icon: icon,
       prefix: prefix,
