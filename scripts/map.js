@@ -135,7 +135,7 @@ $(window).on('load', function() {
           point['Head Offices'] + '</b><br>' +
           point['Area'] + '</b><br>' +
           point['BUA'])
-          .bindTooltip(['test'],{permanent: true, direction: 'right'});
+          .bindTooltip(point['test'],{permanent: true, direction: 'right'});
 
         if (layers !== undefined && layers.length !== 1) {
           marker.addTo(layers[point.Group]);
