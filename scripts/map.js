@@ -21,7 +21,7 @@ $(window).on('load', function() {
     });
   }
 
-L.marker([-37.7772, 175.2606]).bindLabel('Look revealing label!').addTo(map);
+L.marker([30.059786,31.541351]).bindLabel('Look revealing label!').addTo(map);
   
   /**
    * Sets the map view so that all markers are visible, or
