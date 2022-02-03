@@ -122,8 +122,7 @@ $(window).on('load', function() {
           'fa',
           point['Marker Color'].toLowerCase(),
           point['Icon Color']
-        )
-      : bindTooltip('Gooood ISA', { permanent: true });
+        );
 
       if (point.Latitude !== '' && point.Longitude !== '') {
         var marker = L.marker([point.Latitude, point.Longitude], {icon: icon})
@@ -136,6 +135,7 @@ $(window).on('load', function() {
           point['Head Offices'] + '</b><br>' +
           point['Area'] + '</b><br>' +
           point['BUA']);
+          .bindTooltip("Test Label",{permanent: true, direction: 'right'});
 
         if (layers !== undefined && layers.length !== 1) {
           marker.addTo(layers[point.Group]);
