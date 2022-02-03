@@ -122,7 +122,8 @@ $(window).on('load', function() {
           'fa',
           point['Marker Color'].toLowerCase(),
           point['Icon Color']
-        );
+        )
+      : bindTooltip('Gooood ISA', { permanent: true });
 
       if (point.Latitude !== '' && point.Longitude !== '') {
         var marker = L.marker([point.Latitude, point.Longitude], {icon: icon})
